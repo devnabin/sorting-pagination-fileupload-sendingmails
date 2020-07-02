@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="navdiv">
+    <nav>
+      <ul>
+        <li><a href="/">Blog</a></li>
+        <li><a href="sendmail">Sending Mails</a></li>
+        <li><a href="/image">Profil Pic</a></li>
+      </ul>
+    </nav>
+    <div class="time">Server Time <span id="time"></span></div>
+  </div>
+  <br />
+  <div class="writePostDiv">
+    <button class="writePost add-post-but" title="Write a post"><span class="material-icons">
+        edit
+      </span></button>
+      
+
+
+<button class="writePost del-all-post" title="Delete all the post from Database"><span class="material-icons  del-all-post">
+        delete
+      </span></button>
+
+
+  </div>
+
+  {{!-- post div  --}}
+  <div class="blog-div">
+    <form action="" id="form">
+    <h1>Blog</h1>
+      <hr>
+      <br>
+      <h2>Heading</h2>
+      <textarea name="" id="heading"></textarea><br /><br>
+      <h2>Description</h2>
+      <textarea name="" id="des"></textarea> <br /><br>
+      <h2>Add Image</h2>
+      <input type="file" name="upload" id="file" /><br /> <br>
+      <button id="post" type="submit">Post</button>
+    </form>
+  </div>
+
+
+
+  {{!-- rendring blog post in browser --}}
+  <div class="main">
+
+<div class="showmore">
+
+
+  <button  class="clk">Show More</button>
+
+
+  <div class="nomore">NO More Post Found!</div>
+</div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>

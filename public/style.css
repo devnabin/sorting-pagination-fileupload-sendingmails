@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navdiv {
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  width: 100vw;
+  font-size: large;
+  box-shadow: 1px 1px 8px black;
+ 
+}
+
+.time {
+  float: right;
+  margin: 0 500px 0 0;
+}
+nav ul {
+  margin-left: 30vh;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin-left: 10px;
+  text-align: center;
+  padding: 3px;
+  transition: 0.2s ease-in-out;
+  color: black;
+
+}
+nav ul li {
+  float: left;
+  list-style: none;
+}
+
+nav ul li a:hover {
+ border-bottom: 1px solid white;
+}
+
+.writePostDiv {
+  position: relative;
+}
+.writePost {
+  box-shadow: 0 0 9px 2px black;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  float: right;
+  outline: none;
+  margin: 40px 20px 0 0 ;
+}
+.material-icons {
+  transition: 0.3s ease-in;
+}
+.writePost:hover .material-icons {
+  transform: rotate(360deg);
+}
+.writePost:hover {
+  box-shadow: 0 0 9px 2px blue;
+}
+
+.blog-div {
+  display: none;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  width: 95vw;
+}
+
+.blog-div textarea {
+  margin: 10px 0 0 0;
+  resize: none;
+  width: 100%;
+  height: 10vh;
+  padding: 9px;
+}
+
+.blog-div textarea:focus {
+  background-color: rgb(230, 226, 213);
+}
+
+.blog-div #des {
+  height: 45vh;
+}
+
+.blog-div input {
+  margin-left: 0;
+}
+.blog-div button {
+  margin-left: 50%;
+}
+
+.e {
+  display: block;
+}
+
+.g {
+  box-shadow: 0 0 10px 2px green;
+}
+
+.blog-div button {
+  width: 80px;
+  padding: 10px;
+  background-color: transparent;
+}
+.blog-div button:hover {
+  background-color: black;
+  color: white;
+}
+
+/*
+.testdiv {
+  overflow-y: scroll;
+}
+
+.testdiv::-webkit-scrollbar {
+  width: 10px;
+  
+
+}
+.testdiv::-webkit-scrollbar-track {
+ border: 1px solid rgb(211, 210, 210);
+
+}
+
+.testdiv::-webkit-scrollbar-thumb {
+  background: rgb(66, 59, 59); 
+  border-radius: 10px;
+
+ Handle on hover 
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+} */
+
+.box {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+.box form {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+/* blogasdf */
+
+.main {
+  padding: 10%;
+  height: auto;
+}
+
+.postdiv {
+  height: 10vh;
+  margin-bottom: 20px;
+  padding: 5px;
+  box-shadow: 0 0 5px 1px rgb(112, 111, 111);
+  position: relative;
+  cursor: pointer;
+}
+.postdiv:hover{
+  background-color: rgb(221, 223, 224);
+}
+
+
+.postheading {
+  font-weight: bold;
+  font-size: 20px;
+  height: 30%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  text-align: left;
+
+}
+.postdescription {
+  font-size: 18px;
+  height: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  text-align: left;
+}
+
+
+
+ /* show more for pegination  */
+ .showmore{
+   text-align: center;
+ }
+.showmore button{
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 20px;
+}
+.showmore button:hover{
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+.showmore div{
+  width: 100%;
+  background-color: gray;
+  padding:20px 100px 20px 100px;
+  font-size: 20px;
+  color: white;
+}
+.hide{
+  display: none;
+}
+
+.del-all-post{
+  color:white;
+  background: red;
+}
